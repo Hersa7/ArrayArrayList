@@ -3,19 +3,12 @@ import java.util.ArrayList;
 
 public class LatihanMandiri3 {
     public static void main(String[] args) {
-        ArrayList<String> nama = new ArrayList<>();
-        nama.add("Andi");
-        nama.add("Budi");
-        nama.add("Ayu");
-        nama.add("Citra");
-        nama.add("Adit");
-        nama.add("Doni");
-
-        System.out.println("Nama berawalan A:");
-        for (String n : nama) {
-            if (n.startsWith("A")) {
-                System.out.println("  " + n);
+        ArrayList<String> nama = new ArrayList<>(); 
+        String[] data = {"Andi","Budi","Ayu","Citra","Adit","Doni"}; 
+        for (String d : data) nama.add(d); 
+        for (String n : nama) { 
+            if (n.startsWith("A")) System.out.println(n); 
+        } 
+        // hasil: Andi, Ayu, Adit
             }
         }
-    }
-}

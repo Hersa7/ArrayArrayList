@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package bagian1.array;
 
-/**
- *
- * @author LENOVO
- */
 public class Latihan4 {
-    
+    public static void main(String[] args) {
+        String[] hari = {"Senin", "Selasa", "Rabu", "Kamis", "Jumat"};
+        
+        System.out.println("=== Nama Hari Lebih dari 5 Huruf ===");
+        for (String h : hari) {
+            if (h.length() > 5) {
+                System.out.println(h + " (" + h.length() + " huruf)");
+            }
+        }
+    }
 }
